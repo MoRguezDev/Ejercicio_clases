@@ -1,6 +1,12 @@
 public class Animal {
-    String especie = "Mamífero";
-    String nombre = "ElPerroDelVecino";
+    String especie;
+    String nombre;
+
+    // Constructor
+    public Animal(String especie, String nombre) {
+        this.especie = especie;
+        this.nombre = nombre;
+    }
 
     public void comer(){
         System.out.println("El animal con nombre " + nombre + " está comiendo");
